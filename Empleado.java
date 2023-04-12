@@ -7,6 +7,10 @@ package ies;
  * @author Óscar
  * @version 0.0.1
  */ 
+
+ /**
+  * @see <a href = "http://www.aprenderaprogramar.com" /> aprenderaprogramar.com – Didáctica en programación </a>
+  */
 public class Empleado {
 	private int emp_no;
 	private String nombre;
