@@ -7,6 +7,7 @@ package ies;
  * @author Óscar
  * @version 0.0.1
  * @since 2023-04-14
+ * @serial 10100110011
  */ 
 
  /**
@@ -38,6 +39,9 @@ public class Empleado {
 	 * @param nombre
 	 * @param salario
 	 * @param dept
+	 * @return {@link #getPobla()}
+	 * @throws No hay excepciones
+	 * @deprecated No hay clases que se vayan a borrar
 	 */
 	
 	public Empleado(int emp_no, String nombre, Double salario, Departamento dept) {
