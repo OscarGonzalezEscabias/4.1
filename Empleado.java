@@ -21,34 +21,30 @@ public class Empleado {
 	private String pobla;
 	private String oficio;
 	private Double salario;
-	private Departamento dept;
 
 	public Empleado(int emp_no, String nombre, String apellido, String pobla, String oficio,
-			Double salario, Departamento dept) {
+			Double salario) {
 		this.emp_no = emp_no;
 		this.nombre = nombre;
 		this.apellido = apellido;
 		this.pobla = pobla;
 		this.oficio = oficio;
 		this.salario = salario;
-		this.dept = dept;
 	}
 
 	/**
 	 * @param emp_no
 	 * @param nombre
 	 * @param salario
-	 * @param dept
 	 * @return {@link #getPobla()}
 	 * @throws No hay excepciones
 	 * @deprecated No hay clases que se vayan a borrar
 	 */
 	
-	public Empleado(int emp_no, String nombre, Double salario, Departamento dept) {
+	public Empleado(int emp_no, String nombre, Double salario) {
 		this.emp_no = emp_no;
 		this.nombre = nombre;
 		this.salario = salario;
-		this.dept = dept;
 	}
 
 	public int getEmp_no() {
@@ -91,14 +87,6 @@ public class Empleado {
 		this.salario = salario;
 	}
 	
-	
-	public Departamento getDept() {
-		return dept;
-	}
-
-	public void setDept(Departamento dept) {
-		this.dept = dept;
-	}
 	
 	public void subidasalario(Double subida) {
 		salario = salario + subida;
