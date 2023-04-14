@@ -6,6 +6,7 @@ package ies;
 /**
  * @author Óscar
  * @version 0.0.1
+ * @since 2023-04-14
  */ 
 
  /**
@@ -31,6 +32,13 @@ public class Empleado {
 		this.salario = salario;
 		this.dept = dept;
 	}
+
+	/**
+	 * @param emp_no
+	 * @param nombre
+	 * @param salario
+	 * @param dept
+	 */
 	
 	public Empleado(int emp_no, String nombre, Double salario, Departamento dept) {
 		this.emp_no = emp_no;
@@ -99,4 +107,6 @@ public class Empleado {
 		}
 		return true;
 	}
+
+	
 }
